@@ -25,6 +25,12 @@
             background-color: #F6F8FA;
         }
 
+        code {
+            background-color: #F6F8FA;
+            font-size: 16px;
+            padding: 5px;
+        }
+
         h1 {
             font-family: 'Merriweather', serif;
         }
@@ -86,6 +92,47 @@
         <h4>What is Github?</h4>
         <p>GitHub is a for-profit company that offers a cloud-based Git repository hosting service. Essentially, it
             makes it a lot easier for individuals and teams to use Git for version control and collaboration.</p>
+        <h4>Git & Github</h4>
+        <p>Git and Github are not the same thing. Git is an open-source, version control tool.
+            GitHub is a company that makes tools which integrate with git. You do not need GitHub to use
+            git, but you cannot use GitHub without using git.</p>
+        <h4>Step 0: Install and Setup Git, Create Github Account</h4>
+        <div class="step-details mx-3">
+            <p>First of all you need to <a href="https://github.com/signup" target="_blank">create Github account</a>
+                and <a href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git" target="_blank">install
+                    git</a> on your operating system.
+            </p>
+            <p>After installing git, run command <code>git --version</code> If git is
+                installed, this command will
+                output the git
+                version.</p>
+            <p>Now you need to add your name and email in git configuration. Run these commands.</p>
+            <ul>
+                <li>
+                    <code>git config --global user.name &ltYour Name&gt</code>
+                    <p>Replace &ltYour Name&gt with your actual name. In my case, it will become
+                        <i style="color: green;">git config --global user.name Usman</i>
+                    </p>
+                </li>
+                <li>
+                    <code>git config --global user.email &ltGithub Email&gt</code>
+                    <p>Replace &ltGithub Email&gt with your email which you used to sign up for Github. It will be like
+                        <i style="color: green;">git config --global user.email abc@email.com</i>
+                    </p>
+                </li>
+            </ul>
+            <p>Now run these commands to verify if name and email are added.</p>
+            <ul>
+                <li>
+                    <code>git config --global user.name</code>
+                    <p>This will output the name you added</p>
+                </li>
+                <li>
+                    <code>git config --global user.email</code>
+                    <p>This will output the email you added</p>
+                </li>
+            </ul>
+        </div>
     </div>
 </body>
 
