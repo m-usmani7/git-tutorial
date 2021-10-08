@@ -56,7 +56,10 @@
             GitHub is a company that makes tools which integrate with git. You do not need GitHub to use
             git, but you cannot use GitHub without using git.</p>
         <div class="alert alert-info">There are many ways to use git including command line and
-            git gui. We will work on git using commands in this tutorial</div>
+            git gui. We will work on git using commands in this tutorial. Also i'll be using Linux environment. I assume
+            you are aware of some basic Linux commands e.g creating file, writing to file, creating directory,
+            displaying contents of a
+            directory etc.</div>
         <div class="alert alert-warning">Whenever I mention <strong>run command</strong>, it means running the specified
             command in <strong>Terminal</strong> (Linux, Mac) or <strong>Command Prompt</strong> (Windows)</div>
         <h4>Step 0: Install and Setup Git, Create Github Account</h4>
@@ -92,6 +95,24 @@
                     <p>This will output the email you added</p>
                 </li>
             </ul>
+        </div>
+        <h4>Step 1: Create Local Repository</h4>
+        <div class="step-details mx-3">
+            <p>Create a new directory where you want to place your project files and set this directory as current
+                working directory in your Terminal or Command Prompt.</p>
+            <p>Run the command <code>git init</code>. After
+                running the command, an empty repository will be created locally in your current directory.</p>
+            <img src="./assets/images/gitinit.png">
+            <p>This repository will be represented by <strong>.git</strong> directory which is hidden.</p>
+            <p>Add some files in current working directory, let's say <strong>file1.txt</strong>,
+                <strong>file2.txt</strong>. Also create another folder here and add <strong>file3.txt</strong> in it.
+                Add some text in these files.
+            </p>
+            <img src="./assets/images/addfiles.png">
+            <p>File contents are:</p>
+            <p><strong>file1.txt: </strong>This is file 1</p>
+            <p><strong>file2.txt: </strong>This is file 2</p>
+            <p><strong>InsideFolder/file3.txt: </strong>This is file 3</p>
         </div>
     </div>
 </body>
