@@ -103,8 +103,14 @@
             <p>Run the command <code>git init</code>. After
                 running the command, an empty repository will be created locally in your current directory.</p>
             <img src="./assets/images/gitinit.png">
-            <p>This repository will be represented by <strong>.git</strong> directory which is hidden.</p>
-            <p>Add some files in current working directory, let's say <strong>file1.txt</strong>,
+            <p>This repository will be represented by <strong>.git</strong> directory which is hidden. We can also work
+                in branches in git, by default there will be one branch created named <strong>master</strong>. Tradition
+                is that your master branch should contain only fully working tested code. If you need to add new
+                features or update your code, create a new branch, work on it, when you're sure that this code is now
+                error free and fully working, merge this new branch to master.</p>
+            <p>Creating and merging branches are explained later.</p>
+            <p>We will use plain text files for this tutorial. Add some files in current working directory, let's say
+                <strong>file1.txt</strong>,
                 <strong>file2.txt</strong>. Also create another folder here and add <strong>file3.txt</strong> in it.
                 Add some text in these files.
             </p>
@@ -113,6 +119,51 @@
             <p><strong>file1.txt: </strong>This is file 1</p>
             <p><strong>file2.txt: </strong>This is file 2</p>
             <p><strong>InsideFolder/file3.txt: </strong>This is file 3</p>
+        </div>
+        <h4>Step 2: Add & Commit Files (Staging)</h4>
+        <div class="step-details mx-3">
+            <p>Till now, we have empty repository and we have some files in our working directory. To work
+                correctly, local repository need to track the files so git can know the histroy of these files.</p>
+            <p>So we need to add these files to this repository. Running the command <code>git status</code> will tell
+                you the details of files which are not added to the repository or which files are new or updated.</p>
+            <img src="./assets/images/gitstatus1.png">
+            <p>You can see, this command is telling which branch you're currently on and there are some untracked files
+                and directories. We need our repository to track these files. If you want to add all files at once, run
+                the
+                command <code>git add .</code> (dot at the end). If don't want to add all files, you can also add files
+                explicitly by running the command <code>git add &ltfilename&gt</code>
+            </p>
+            <p>Replace filename with file you want to add. We can also add multiple files with this command. This
+                command will be like <i style="color: green;">git add file1.txt</i> or if adding multiple files <i
+                    style="color: green;">git add
+                    file1.txt file2.txt</i></p>
+            <p>Let's say we add <strong>file1.txt</strong>. After adding, check the status of git.</p>
+            <img src="./assets/images/gitstatus2.png">
+            <p>You can see it is telling us that there is new file and there are still two untracked files. It is upto
+                us if we wan't to include these remaining files also or not, there is no restriction. Let us add all
+                files and then check git status.</p>
+            <img src="./assets/images/gitstatus3.png">
+            <p><strong>In git context, adding files is technically known as STAGING.</strong></p>
+            <p>If for any reason, you don't want to add file (unstage), but you already did it, running command
+                <code>git rm --cached &ltfilename&gt</code> will unstage file for you.
+            </p>
+            <p>Replace &ltfilename&gt with the file you want to unstage. This command will be like <i
+                    style="color: green;">git rm --cached file2.txt</i>. Let us test this command.</p>
+            <img src="./assets/images/unstage.png">
+            <p>You can see that file is unstaged. Add this file again.</p>
+            <p>We're all well aware of <strong>save</strong>. Everytime we save our work so that the work done should
+                not lost.</p>
+            <p>This is what we want to do here. We want to save our work but working with git, we say
+                <strong>commit</strong> our work. There is a command which will do this work for you.
+            </p>
+            <code>git commit -m "&ltMessage&gt"</code>
+            <p>Replace the &ltMessage&gt with descriptive message, what you've done before this commit.</p>
+            <p>This command will be like <i style="color: green;">git commit -m "This is my very first commit. I am
+                    still learning. I added three text files to practice."</i></p>
+            <img src="./assets/images/commit.png" style="width: 100%;">
+            <div class="alert alert-info">Everytime there is new file, deletion of file or there is updation to file, we
+                need to add it. Commit is obviously necessary after ebery change.
+            </div>
         </div>
     </div>
 </body>
