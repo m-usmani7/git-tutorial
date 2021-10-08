@@ -5,11 +5,88 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Git Tutorial</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gabriela&family=Merriweather:ital,wght@1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ"
+        crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #F6F8FA;
+        }
+
+        h1 {
+            font-family: 'Merriweather', serif;
+        }
+
+        h4 {
+            font-family: 'Gabriela', serif;
+            margin: 35px 0 15px 0;
+            font-weight: 600;
+        }
+
+        p {
+            color: #585858;
+        }
+
+        a {
+            color: #0099FF;
+            text-decoration: none;
+        }
+
+        .container {
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        }
+    </style>
 </head>
 
 <body>
-    <h1>Beginner's Guide to Git and Github</h1>
-    <p>Article by Muhammad Usman</p>
+    <div class="my-5">
+        <h1 class="text-center">Beginner's Guide to Git and Github</h1>
+        <p class="text-center">Article by Muhammad Usman</p>
+    </div>
+    <div class="container my-5 p-5">
+        <h4>What is Version Control System (VCS)?</h4>
+        <p>Version control helps developers track and manage changes to a software project’s code. As a software project
+            grows, version control becomes essential.</p>
+        <p>
+            Version control lets developers safely work through branching and merging.
+
+            With branching, a developer duplicates part of the source code (called the repository). The developer can
+            then safely make changes to that part of the code without affecting the rest of the project.
+
+            Then, once the developer gets his or her part of the code working properly, he or she can merge that code
+            back into the main source code to make it official.
+
+            All of these changes are then tracked and can be reverted if need be.
+        </p>
+        <h4>What is Git?</h4>
+        <p>
+            Git is the most commonly used version control system. Git is software that runs locally. Your files and
+            their
+            history are stored on your computer. Git tracks the changes you make to files, so you have a
+            record of what has been done, and you can revert to specific versions should you ever need to. Git also
+            makes collaboration easier, allowing changes by multiple people to all be merged into one source.
+
+            So regardless of whether you write code that only you will see, or work as part of a team, Git will be
+            useful for you.
+        </p>
+        <h4>What is Github?</h4>
+        <p>GitHub is a for-profit company that offers a cloud-based Git repository hosting service. Essentially, it
+            makes it a lot easier for individuals and teams to use Git for version control and collaboration.</p>
+    </div>
 </body>
 
 </html>
